@@ -73,6 +73,7 @@ export default {
       currentTheme="system"
       :customStyle="customStyle"
       :onEvent="handleSemaphorEvent"
+      :showAssistant="false"
     />
   </div>
 </template>
