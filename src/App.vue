@@ -1,6 +1,7 @@
 <script lang="ts">
 import { Dashboard, TStyle } from 'vue2-semaphor';
 import 'vue2-semaphor/dist/style.css'; // IMPORTANT! Include the CSS file. This is the default style, you can customize it.
+import './style.css'; // Custom styles
 
 const DASHBOARD_ID = 'd_cf007a8b-19bc-46ad-8787-2915445b7b86';
 const DASHBOARD_SECRET = 'ds_f32f0b30-b7e1-40f9-ba6a-9804a5b9d635';
@@ -66,14 +67,16 @@ export default {
 <template>
   <div>
     <div v-if="!token">Loading...</div>
-    <Dashboard
-      v-if="token"
-      :token="token"
-      :id="DASHBOARD_ID"
-      currentTheme="system"
-      :customStyle="customStyle"
-      :onEvent="handleSemaphorEvent"
-      :showAssistant="false"
-    />
+    <div class="dashboard-container">
+      <Dashboard
+        v-if="token"
+        :token="token"
+        :id="DASHBOARD_ID"
+        currentTheme="system"
+        :customStyle="customStyle"
+        :onEvent="handleSemaphorEvent"
+        :showAssistant="false"
+      />
+    </div>
   </div>
 </template>
