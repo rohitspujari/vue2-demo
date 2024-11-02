@@ -3,6 +3,9 @@ import { Dashboard, TStyle } from 'vue2-semaphor';
 import 'vue2-semaphor/dist/style.css'; // IMPORTANT! Include the CSS file. This is the default style, you can customize it.
 import './style.css'; // Custom styles
 
+// const DASHBOARD_ID = 'd_4cfcf244-f7ca-4617-8a1b-6ad372fed702';
+// const DASHBOARD_SECRET = 'ds_02962657-6e2d-4c10-94c4-f0f85d6ac1ba';
+
 const DASHBOARD_ID = 'd_cf007a8b-19bc-46ad-8787-2915445b7b86';
 const DASHBOARD_SECRET = 'ds_f32f0b30-b7e1-40f9-ba6a-9804a5b9d635';
 const TOKEN_URL = 'https://semaphor.cloud/api/v1/token';
